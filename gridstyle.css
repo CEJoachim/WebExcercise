@@ -227,7 +227,16 @@ main {
 	}
 }
 
-
+@keyframes anim02 {
+	from {
+		border-color: rgb(197, 197, 197);
+		border-radius: 0.318em;
+	}
+	to {
+		border-color: rgb(156, 156, 156);
+		border-radius: 0.518em;
+	}
+}
 
 .form input {
 	font-family: 'Open Sans', sans-serif;
@@ -243,7 +252,13 @@ main {
 	padding:0.5em;
 }
 
-
+.form input:hover {
+	cursor:pointer;
+	animation: 100ms anim02;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 
 .register-layout {
 	display: flex;
