@@ -7,6 +7,7 @@
 	padding:0;
 }
 
+
 .wrapper {
 	display: grid;
 	grid-auto-flow: column;
@@ -18,12 +19,44 @@
 	flex-grow: 1;
 }
 
+
+#hamburger
+{
+	/* display: block; */
+	background-image: url("Hamburger_icon.png");
+	background-size:cover;
+	width: 33px;
+	height: 33px;
+	/* background: #cdcdcd; */
+	border-radius: 3px;
+	grid-area:hamburger;
+}
+
+#logo-link{
+	grid-area:logo;
+}
+
 .nav {
+	display: grid;
+	grid-template-areas:
+	"hamburger logo"
+	"items items";
+	gap:1em;
+}
+
+.menu-items {
+	grid-area:items;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	/* grid-area:items;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 1em;
+	gap: 1em; */
 }
 
 header {
@@ -33,6 +66,12 @@ header {
 	padding-bottom:1em;
 	z-index: 1;
 	flex:0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
 }
 
 main {
@@ -67,6 +106,7 @@ main {
 #content {
 	grid-area: content;
 }
+
 
 .borders {
 	border-style:solid;
@@ -187,6 +227,8 @@ main {
 	}
 }
 
+
+
 .form input {
 	font-family: 'Open Sans', sans-serif;
 	font-style: regular;
@@ -195,9 +237,27 @@ main {
 
 	/* color:white; */
 	/* background-color: darkcyan; */
+	border-color: rgb(197, 197, 197);
 	border-style: solid;
 	border-radius: 0.318em;
 	padding:0.5em;
+}
+
+
+
+.register-layout {
+	display: flex;
+	flex-direction: column;
+
+	background-color: rgb(57, 192, 170);
+	border-radius: 1em;
+	gap:2em;
+	padding:2em;
+}
+
+.register-desc {
+	display: flex;
+	flex-direction: column;
 }
 
 .form-wrapper {
@@ -216,7 +276,26 @@ main {
 		"sidebar3 sidebar2";
 	}
 
+	.register-layout {
+		flex-direction: row;
+	}
 
+	#hamburger {
+		display: none;
+	}
+
+	.nav {
+		grid-template-areas: "hamburger logo items"
+	}
+
+	.menu-items {
+		grid-area:items;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+	}
 }
 
 @media (min-width: 55em) {

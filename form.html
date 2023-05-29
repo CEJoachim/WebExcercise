@@ -2,18 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>article</title>
+	<title>New Member Registration</title>
 	<link rel="stylesheet" href="gridstyle.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header shadow">
 			<nav class="nav font-large-nav">
-				<a href=""><img id="logo" src="logo.svg" ></a>
-				<div><a href="">Tech</a></div>
-				<div><a href="">Entertainment</a></div>
-				<div><a href="">Science</a></div>
-				<div><a href="">Reviews</a></div>
+				<a id="logo-link" href=""><img id="logo" src="logo.svg" ></a>
+				<div class="menu-items">
+					<div><a href="">Tech</a></div>
+					<div><a href="">Entertainment</a></div>
+					<div><a href="">Science</a></div>
+					<div><a href="">Reviews</a></div>
+				</div>
+				<a  id="hamburger" href="#"></a>
 			</nav>
 		</header>
 
@@ -26,15 +29,21 @@
 					<div class="main-grid">
 						<div id="sidebar1" class="sidebar font-small-ui">
 							<div class="crumbs">
-								<a href="index.html">Home</a>><a href="#">Entertainment</a>
+								<a href="index.html">Home</a>><a href="#">Registration</a>
 							</div>
 							<hr/>
 						</div>
 						
 						<div id="content">
-							<div class="form-wrapper">
-								<form class="form" action="form-result.php" method="POST">
-									<label for="firstname">First name: </label>
+							<div class="register-layout">
+								<div class="register-desc">
+									<h1>New Member Registration</h1>
+									<p>Create a new account for new members and take advantage of all our member perks.</p>
+								</div>
+
+								<div class="form-wrapper">
+									<form class="form" action="form-result.php" method="POST">
+										<label for="firstname">First name: </label>
 									<input type="text" name="firstname" placeholder="Jane"  required>
 									
 									<label for="lastname">Last name: </label>
@@ -43,9 +52,13 @@
 									<label for="email">Email: </label>
 									<input type="email" name="email" placeholder="jane@doe.com"  required>
 
+									<label for="birthday">Birthday:</label>
+									<input type="date" id="birthday" name="birthday"value="1980-01-01"min="1900-01-01" max="2023-5-29" required>
+									
 									<button type="submit" value="Submit">Submit</button>
 								</form>
-
+								
+								</div>
 							</div>
 							
 						</div>
