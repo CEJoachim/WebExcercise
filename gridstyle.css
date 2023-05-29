@@ -138,6 +138,10 @@ main {
 	background-color: rgb(240, 240, 240);
 }
 
+.content-table tbody tr:last-of-type {
+	border-bottom: 2px solid rgb(57, 192, 170);
+}
+
 .borders {
 	border-style:solid;
 	border-width: 1px;
