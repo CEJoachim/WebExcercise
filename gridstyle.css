@@ -110,9 +110,32 @@ main {
 
 .content-table {
 	border-collapse: collapse;
-	margin: 25px 0;
+	margin: 25px 4px;
 	font-size: 0.9em;
-	min-width: 400px;
+	min-width: 600px;
+}
+
+.content-table thead tr {
+	background-color: rgb(57, 192, 170);
+	font-family: 'Dongle', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	text-align: left;
+
+	color:white;
+}
+
+.content-table th,
+.content-table td {
+	padding: 12px 15px;
+}
+
+.content-table tbody tr {
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+	background-color: rgb(240, 240, 240);
 }
 
 .borders {
