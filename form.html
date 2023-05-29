@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>article</title>
+	<link rel="stylesheet" href="gridstyle.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header shadow">
+			<nav class="nav font-large-nav">
+				<a href=""><img id="logo" src="logo.svg" ></a>
+				<div><a href="">Tech</a></div>
+				<div><a href="">Entertainment</a></div>
+				<div><a href="">Science</a></div>
+				<div><a href="">Reviews</a></div>
+			</nav>
+		</header>
+
+		
+		<main>
+			<div id="main-bg" class="shadow">
+				<div class="borders">
+
+				
+					<div class="main-grid">
+						<div id="sidebar1" class="sidebar font-small-ui">
+							<div class="crumbs">
+								<a href="index.html">Home</a>><a href="#">Entertainment</a>
+							</div>
+							<hr/>
+						</div>
+						
+						<div id="content">
+							<div class="form-wrapper">
+								<form class="form" action="form-result.php" method="POST">
+									<label for="firstname">First name: </label>
+									<input type="text" name="firstname" placeholder="Jane"  required>
+									
+									<label for="lastname">Last name: </label>
+									<input type="text" name="lastname" placeholder="Doe"  required>
+									
+									<label for="email">Email: </label>
+									<input type="email" name="email" placeholder="jane@doe.com"  required>
+
+									<button type="submit" value="Submit">Submit</button>
+								</form>
+
+							</div>
+							
+						</div>
+						
+						<div class="sidebar" id="sidebar2">sidebar2</div>
+						<div class="sidebar" id="sidebar3">Sidebar 3</div>
+						
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		
+		<footer class="footer shadow">Footer</footer>
+	</div>
+</body>
+</html>
+  
+  

@@ -1,34 +1,138 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<title>Test Blogg</title>
-		<div id="header">
-			<img src="">
-			<ul>
-				<li>
-					<a href="index.html">Tech</a>
-				</li>
-				<li>
-					<a href="index.html">Reviews</a>
-				</li>
-				<li>
-					<a href="index.html">Science</a>
-				</li>
-				<li>
-					<a href="index.html">Entertainment</a>
-				</li>
-				<li>
-					<a href="index.html">More +</a>
-				</li>
-			</ul>
-		</div><div id="header">
-	</head>
-	<body>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" href="gridstyle.css">
+	<link rel="stylesheet" href="uxstyle.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header shadow">
+			<nav class="nav font-large-nav">
+				<a href=""><img id="logo" src="logo.svg" ></a>
+				<div><a href="">Tech</a></div>
+				<div><a href="">Entertainment</a></div>
+				<div><a href="">Science</a></div>
+				<div><a href="">Reviews</a></div>
+			</nav>
+		</header>
 
-		<h1>This is a Heading</h1>
-		<p>This is a paragraph.</p>
-
-	</body>
-</html> 
-
+		
+		<main>
+			<div id="main-bg" class="shadow">
+				<div class="borders">
+					<div class="main-grid">
+						<div id="sidebar1" class="sidebar font-small-ui">
+							<div class="crumbs">
+								<a href="index.html">Home</a>><a href="#">Entertainment</a>
+							</div>
+							<hr/>
+						</div>
+						
+						<section id="content" class="ux_grid">
+							<div class="grid_article">
+								<div class="blog-summary">
+								<article-img>
+									<a href="article.html"></a>
+									<div class="backdrop">
+										<div class="blog-summary">
+											<a class="article-category-normal">Entertainment</a>
+											<a class="font-light article-header-large" href="article.html">
+												The Steam Deck is on sale for the first time ever
+											</a>
+											<a class="article-author-normal">Joachim Lindkvist</a>
+										</div>
+									</div>
+								</article-img>
+								</div>
+							</div>
+							<div class="grid_article">
+								<div class="blog-summary">
+									<article-img>
+										<div class="category-author">
+											<a class="article-category-normal">Tech</a>
+											<a class="article-author-normal">Joachim Lindkvist</a>
+										</div>
+										<a href="article.html"></a>
+										<div class="backdrop">
+											<a href="article.html" class="article-header-normal">
+												Gamification in UX Design and Influence on User Engagement
+											</a>
+										</div>
+									</article-img>
+								</div>
+							</div>
+							<div class="grid_article">
+								<div class="blog-summary">
+									<article-img>
+										<div class="category-author">
+											<a class="article-category-normal">Tech</a>
+											<a class="article-author-normal">Joachim Lindkvist</a>
+										</div>
+										<a href="article.html"></a>
+										<div class="backdrop">
+											<a href="article.html" class="article-header-normal">
+												Three Mile Island — How Bad UX Almost Destroyed a State
+											</a>
+										</div>
+									</article-img>
+								</div>
+							</div>
+							<div class="grid_article">
+								<div class="blog-summary">
+									<article-img>
+										<div class="category-author">
+											<a class="article-category-normal">Tech</a>
+											<a class="article-author-normal">Joachim Lindkvist</a>
+										</div>
+										<a href="article.html"></a>
+										<div class="backdrop">
+											<a href="article.html" class="article-header-normal">
+												How to create your UX/UI portfolio website today | FREE Notion templates for you
+											</a>
+										</div>
+									</article-img>
+								</div>
+							</div>
+							<div class="grid_article">
+								<div class="blog-summary">
+									<article-img>
+										<div class="category-author">
+											<a class="article-category-normal">Tech</a>
+											<a class="article-author-normal">Joachim Lindkvist</a>
+										</div>
+										<a href="article.html"></a>
+										<div class="backdrop">
+											<a href="article.html" class="article-header-normal">
+												Mastering the Basics of Good Search UX
+											</a>
+										</div>
+									</article-img>
+								</div>
+							</div>
+						</section>
+						
+						<div class="sidebar" id="sidebar2">
+							<div class="newsletter-ad">
+								<div>
+									<span>Dont miss a beat!</span>
+									<p>Sign up for our newsletter and get all the latest news delivered directly to your email.</p>
+									<hr/>
+									<button onclick="window.location.href='form.html';">Join our newsletter</button>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar" id="sidebar3">Sidebar 3</div>
+					</div>
+			</div>
+			</div>
+		</main>
+		
+		
+		<footer class="footer shadow">Footer</footer>
+	</div>
+</body>
+</html>
+  
+  
